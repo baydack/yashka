@@ -1,0 +1,61 @@
+html {
+	box-sizing: border-box;
+	height: 100%;
+}
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+a {
+	display: inline-block;
+	text-decoration: none;
+}
+
+ul,
+li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+button {
+	cursor: pointer;
+	outline: none;
+}
+
+input {
+	outline: none;
+}
+
+body {
+	
+	font-family: "Montserrat";
+	font-weight: 400;
+	background-color: #eff1f5;
+	font-weight: 400;
+	font-size: 15px;
+	height: 100%;
+	color: #3C0B0B;
+
+}
+
+.container {
+	max-width: 1170px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.flex {
+	display: flex;
+}
+.bg-i {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+
+
+

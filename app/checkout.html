@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/logo.png" type="image/x-icon">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>Оформление заказа</title>
+
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__top">
+			<div class="container header__container">
+				<a href="#"><img class="header__logo" src="img/логотип.svg" alt=""></a>
+				<nav class="header__menu">
+					<ul>
+						<li class="header__item"><a class="header__link" href="http://localhost:3000/index.html">Главная</a>
+						</li>
+						<li class="header__item"><a class="header__link" href="http://localhost:3000/shop.html">Каталог</a></li>
+						<li class="header__item"><a class="header__link" href="http://localhost:3000/media-page.html">Медиа</a></li>
+						<li class="header__item"><a class="header__link" href="http://localhost:3000/info-page.html">Информация</a></li>
+						<li class="header__item"><a class="header__link" href="http://localhost:3000/comments.html">Отзывы</a></li>
+						<li class="header__item"><a class="header__link" href="#">Контакты</a></li>
+					</ul>
+				</nav>
+
+				<a class="header__phone" href="tel:380982083057"><span
+						class="header__phone-icon icon-phone"></span>+380982083057</a>
+				<div class="header__cart flex">
+					<div class="header__cart-box"><span class="header__icon-cart lnr lnr-cart"></span></div><span
+						class="header__price">1255р.</span>
+				</div>
+			</div>
+		</div>
+		<div class="box__svg-icon">
+
+			<a href="https://www.instagram.com/yakov_ogorodnik/" target="_blank">
+				<svg class="info__icon icon__instagram">
+					<use xlink:href="sprite.svg#instagram"></use>
+				</svg>
+			</a>
+
+			<a href="#" target="_blank">
+				<svg class="info__icon icon__od">
+					<use xlink:href="sprite.svg#od"></use>
+				</svg>
+			</a>
+
+			<a href="https://www.youtube.com/channel/UCqL7Y7jcVarKAxI45yjdfnw" target="_blank">
+				<svg class="info__icon icon__youtube">
+					<use xlink:href="sprite.svg#youtube"></use>
+				</svg>
+			</a>
+
+			<a href="https://vk.com/yasha_baydak" target="_blank">
+				<svg class="info__icon icon__vk">
+					<use xlink:href="sprite.svg#vk"></use>
+				</svg>
+			</a>
+
+			<a href="#" target="_blank">
+				<svg class="info__icon icon__telega">
+					<use xlink:href="sprite.svg#telega"></use>
+				</svg>
+			</a>
+
+		</div>
+
+		<div class="header__basket">
+			<div class="header__basket-top">
+				Корзина
+				<span class="header__basket-close icon-cross"></span>
+			</div>
+			<div class="header__basket-main">
+				В корзине нет товаров
+			</div>
+			<div class="header__basket-bottom">
+				<p class="header__basket-total">Итого: <span class="header__basket-price">0₽</span></p>
+				<a class="header__basket-link" href="http://localhost:3000/checkout.html">Оформить заказ</a>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<section class="product page-section" style="background-image: url(img/фон/teplica.png);">
+			<div class="product__opaciti"></div>
+			<div class="container">
+				<h2 class="checkout__title">Оформление заказа</h2>
+				<p class="checkout__warning">Заказы доставляются НЕ по всем регионам России! Внимательнее читайте о
+					доставке!
+					<a href="http://localhost:3000/info-page.html" class="checkout__warning-link">Все о доставке.</a>
+				</p>
+				<form class="checkout" action="">
+					<div class="checkout__delivery">
+						<h3 class="checkout__sub-title">Доставка</h3>
+						<input type="text" placeholder="Имя*" class="checkout__delivery-name checkout__delivery-input"
+							required>
+						<input type="text" placeholder="Фамилия*" class="checkout__delivery-lastname checkout__delivery-input"
+							required>
+						<input type="text" placeholder="Город*" class="checkout__delivery-city checkout__delivery-input"
+							required>
+						<input type="text" placeholder="Отделение почты*"
+							class="checkout__delivery-post checkout__delivery-input" required>
+						<input type="text" placeholder="Почтовый индекс*"
+							class="checkout__delivery-postcode checkout__delivery-input" required>
+						<input type="tel" placeholder="Телефон*" class="checkout__delivery-number checkout__delivery-input"
+							required>
+						<input type="email" placeholder="Email*" class="checkout__delivery-email checkout__delivery-input"
+							required>
+					</div>
+					<div class="checkout__order">
+						<h3 class="checkout__sub-title">Ваш заказ</h3>
+						<div class="order__inner">
+							<div class="order__head">
+								<span class="order__head-item">Товар</span>
+								<span class="order__head-item">Подытог</span>
+							</div>
+
+							<div class="order__product">
+								<div class="product__name">ЦенарарияЦенарарияЦенарария Ценарария</div>
+								<div class="product__quantity">
+									<input type="button" class="product__quantity-minus product__quantity-btn" value='-'>
+									<input class="product__quantity-number" type="number" value='1' step="1" min="1">
+									<input type="button" class="product__quantity-plus product__quantity-btn" value='+'>
+								</div>
+								<div class="product__price">300<span class="product__price-simbol">р.</span></div>
+								<div class="product__delete lnr lnr-trash"></div>
+							</div>
+
+							<div class="order__product">
+								<div class="product__name">ЦенарарияЦенарарияЦенарария Ценарария</div>
+								<div class="product__quantity">
+									<input type="button" class="product__quantity-minus product__quantity-btn" value='-'>
+									<input class="product__quantity-number" type="number" value='1' step="1" min="1">
+									<input type="button" class="product__quantity-plus product__quantity-btn" value='+'>
+								</div>
+								<div class="product__price">300<span class="product__price-simbol">р.</span></div>
+								<div class="product__delete lnr lnr-trash"></div>
+							</div>
+
+							<div class="order__bottom">
+								<span class="order__bottom-item">Итого</span>
+								<span class="order__bottom-item">600<span class="order__bottom-item-simbol">р.</span></span>
+							</div>
+						</div>
+						<button class="order__button" type="submit">Подтвердить заказ</button>
+					</div>
+					<div class=" checkout__comment">
+						<h3 class="checkout__sub-title">Примечание к заказу (необязательно)</h3>
+						<textarea class="checkout__comment-area" name="checkout__comment" id=""
+							placeholder="Оставить коментарий к заказу"></textarea>
+					</div>
+
+
+				</form>
+			</div>
+
+		</section>
+	</main>
+
+		<footer class="footer">
+			<div class="container footer__container">
+				<div class="footer__social">
+					<span class="footer__social-text">Мы в соц. сетях:</span>
+					<div class="footer__social-icon">
+						<a href="https://www.instagram.com/yakov_ogorodnik/" target="_blank">
+							<svg class="info__icon icon__instagram">
+								<use xlink:href="sprite.svg#instagram"></use>
+							</svg>
+						</a>
+		
+						<a href="#" target="_blank">
+							<svg class="info__icon icon__od">
+								<use xlink:href="sprite.svg#od"></use>
+							</svg>
+						</a>
+		
+						<a href="https://www.youtube.com/channel/UCqL7Y7jcVarKAxI45yjdfnw" target="_blank">
+							<svg class="info__icon icon__youtube">
+								<use xlink:href="sprite.svg#youtube"></use>
+							</svg>
+						</a>
+		
+						<a href="https://vk.com/yasha_baydak" target="_blank">
+							<svg class="info__icon icon__vk">
+								<use xlink:href="sprite.svg#vk"></use>
+							</svg>
+						</a>
+		
+						<a href="#" target="_blank">
+							<svg class="info__icon icon__telega">
+								<use xlink:href="sprite.svg#telega"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+				<div class="footer__license">
+					<p class="footer__text">© 2021 Тепличный бизнес в деревне.ру Все права защищены</p>
+					<p class="footer__text">ИП Байдак Яков Яковлевич</p>
+					<p class="footer__text">ИНН 882134192357</p>
+				</div>
+		
+				<a class="footer__link" href="#">Пользовательское соглашение</a>
+		
+			</div>
+		</footer>
+
+
+
+	<script src="js/fslightbox.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="js/libs.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
